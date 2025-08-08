@@ -8,8 +8,13 @@ k=int(input())
 ob=Solution()
 print(ob.checkKthBit(n,k))
 
-#clear Kth bit
+#clear Kth bit:
 n=int(input())
 k=int(input())
 n=n&(~(1<<k))
+print(n)
+
+#remeove last set bit from a number
+n=int(input())
+n=n&(n-1)
 print(n)
