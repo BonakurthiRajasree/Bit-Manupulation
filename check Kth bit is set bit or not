@@ -7,3 +7,9 @@ n=int(input())
 k=int(input())
 ob=Solution()
 print(ob.checkKthBit(n,k))
+
+#clear Kth bit
+n=int(input())
+k=int(input())
+n=n&(~(1<<k))
+print(n)
