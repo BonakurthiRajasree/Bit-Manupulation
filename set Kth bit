@@ -1,0 +1,8 @@
+class Solution:
+    def setKthBit(self,n,i):
+        return (n |(1<<i))
+ob=Solution()
+n=int(input())
+i=int(input())
+print(ob.setKthBit(n,i))
+    
