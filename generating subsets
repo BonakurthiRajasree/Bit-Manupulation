@@ -1,0 +1,16 @@
+class Solution:
+    def subsets(self,nums):
+        n=len(nums)
+        ans=[]
+        total_subsets=1<<n
+        for val in range(total_subsets):
+            lst=[]
+            for i in range(n):
+                if(val&(1<<i)):# chekking weather set bit or not
+                    lst.append(nums[i])
+            ans.append(lst)
+        return ans
+nums=list(map(int,input().split()))
+ob =Solution()
+print(ob.subsets(nums))
+                
